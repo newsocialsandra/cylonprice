@@ -1,9 +1,15 @@
-robot_price = 900
-robot_count = 2
-robot_vat = 1.25
+# coding: utf-8
 
-manual_price = 100
-manual_count = 1 
-manual_vat = 1.06
+cylon = {
+	"price": 900,
+	"count": 2,
+	"vat": 1.25
+	}
+manual = {
+	"price": 100,
+	"count": 1,
+	"vat": 1.06
+	}
 
-print robot_price * robot_count * robot_vat + manual_price * manual_count * manual_vat
+
+print cylon["price"] * cylon["count"] * cylon["vat"] + manual["price"] * manual["count"] * manual["vat"] 
