@@ -1,15 +1,20 @@
 # coding: utf-8
 
-cylon = {
-	"price": 900,
-	"count": 2,
-	"vat": 1.25
-	}
-manual = {
-	"price": 100,
-	"count": 1,
-	"vat": 1.06
-	}
+class Product(object):
+	price = 0
+	count = 0
+	vat = 0
 
+cylon = Product()
+cylon.price = 900
+cylon.count = 2
+cylon.vat = 1.25
 
-print cylon["price"] * cylon["count"] * cylon["vat"] + manual["price"] * manual["count"] * manual["vat"] 
+manual = Product()
+manual.price = 100
+manual.count = 1
+manual.vat = 1.06
+
+print cylon.price * cylon.count * cylon.vat + manual.price * manual.count * manual.vat
+
+# ["price"] * cylon["count"] * cylon["vat"] + manual["price"] * manual["count"] * manual["vat"] 
