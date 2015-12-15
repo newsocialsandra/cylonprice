@@ -1,2 +1,2 @@
 # cylonprice
-Calculating price of cylons created by Skynet corp
+Small program to calculate price of cylons.
